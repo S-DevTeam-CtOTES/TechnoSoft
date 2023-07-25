@@ -1,0 +1,50 @@
+
+.Main {
+
+    // .Main__wrapper
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    // .Main__wrapper-content
+
+    &__wrapper-content {
+
+    }
+
+    // .Main__wrapper-content-title
+
+    &__wrapper-content-title {
+    }
+
+    // .Main__wrapper-content-subtitle
+
+    &__wrapper-content-subtitle {
+        margin-top: 20px;
+    }
+
+    // .Main__wrapper-content-btn
+
+    &__wrapper-content-btn {
+        margin-top: 50px;
+        padding: 25px 62px;
+        border-radius: 10px;
+        background: #21A7AF;
+        border: none;
+        color: #1E1E1E;
+        font-family: Oswald;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    // .Main__wrapper-img
+
+    &__wrapper-img {
+    }
+}
+
