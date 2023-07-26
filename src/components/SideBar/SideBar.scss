@@ -1,8 +1,9 @@
 
 
 .SideBar {
-    position: fixed;
-    height: auto;
+    position: sticky;
+    top: 20px;
+    height: max-content;
     width: 300px;
     background-color: #ffffff;
     // .SideBar__img
@@ -27,8 +28,18 @@
             font-style: normal;
             font-weight: 600;
             line-height: normal;
+            a {
+
+                text-decoration: none;
+            }
         }
     }
 }
 .SideBar-Link {
 }
+
+ 
+.fixed {
+    // top: 0;
+    /* Дополнительные стили для фиксированного sideBar, чтобы он остановился перед footer */
+  }

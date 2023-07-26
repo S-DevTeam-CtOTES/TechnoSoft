@@ -1,0 +1,70 @@
+.Footer {
+    // height: 630px;
+    margin-top: 200px;
+    max-height: 150px;
+    background: #1E1E1E;
+    &__wrapper {
+        padding-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        &-information {
+            margin-top: 5px;
+            width: max-content;
+            &-address {
+                color: #9A9A9A;
+                font-size: 14px;
+                font-weight: 400;
+            }
+            &-contacts {
+                gap: 8px;
+                display: flex;
+                color: white;
+                align-items: center;
+                font-size: 24px;
+                font-weight: 400;
+                &-number {
+                    text-decoration: none;
+                    color: white;
+                    &:hover {
+                        border-bottom: 1px solid white;
+                    }
+                }
+                &-email {
+                    text-decoration: none;
+                    color: white;
+                    &:hover {
+                        border-bottom: 1px solid white;
+                    }
+                }
+            }
+            &-links {
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                &-link {
+                    cursor: pointer;
+                    &:hover {
+                        color: #1EC838;
+                        transition: .3s ease;
+                        img {
+                            stroke: #1EC838 ;
+                        }
+                    }
+                }
+            }
+        }
+        &-copyrate {
+            width: 500px;
+            color: #F5F5F5;
+            font-size: 14px;
+            font-weight: 400;
+            display: flex;
+            align-items: end;
+        }
+    }
+}
+
+
+// background: #1E1E1E;

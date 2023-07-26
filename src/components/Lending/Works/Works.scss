@@ -10,10 +10,17 @@
                 &-titleWrapper {
                     cursor: pointer;
                     display: flex;
+                    padding-left: 35px;
                     justify-content: start;
                     align-items: center;
+                    border-bottom: 2px solid black;
                     gap: 7px;
-                    &-img {
+                     &-img {
+                        color: #1E1E1E;
+                        text-align: right;
+                        font-size: 48px;
+                        font-weight: 900;
+                        transition: 0.6s all;
 
                     }
 
@@ -69,8 +76,55 @@
                         }
                     }
                     &-slider {
-                        width: 500px;
-
+                        position: relative;
+                        width: 45%;
+                        &-prev {
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            z-index: 10;
+                            width: 30px;
+                            height: 30px;
+                            background-color: white;
+                            border: none;
+                            cursor: pointer;
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                top: 0px;
+                                transform: translateX(50%);
+                                right:  50%;
+                                background-image: url(../../../assets/icons/left-arrow.png);
+                                background-size: 100%;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        &-next {
+                            padding: 0;
+                            position: absolute;
+                            right: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            z-index: 10;
+                            width: 30px;
+                            height: 30px;
+                            background-color: white;
+                            border: none;
+                            cursor: pointer;
+                            
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                top: 0px;
+                                transform: translateX(50%);
+                                right:  50%;
+                                background-image: url(../../../assets/icons/right-arrow.png);
+                                background-size: 100%;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
                         &-item {
                             // height: auto;
                             img {
@@ -91,6 +145,16 @@
 }
 
 
+.titleWrapper-active {
+    border-bottom: 2px solid black;
+
+}
+
+.img-active {
+        color: #21A7AF;
+        transform: rotate(225deg);
+        transition: 0.6s all;
+}
 
 .accardion-content {
     max-height: 0px;
