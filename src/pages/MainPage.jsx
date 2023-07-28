@@ -6,18 +6,22 @@ import Works from '../components/Lending/Works/Works'
 import SideBar from '../components/SideBar/SideBar'
 
 import './MainPage.scss'
+import Footer from '../components/Footer/Footer'
 
 const MainPage = () => {
   return (
-    <div className='MainPage'>
-        <SideBar/>
-        <div className='MainLending'>
-          <Main/>
-          <AboutUs/>
-          <Teem/>
-          <Works/>
-        </div>
-    </div>
+    <>
+      <div className='MainPage'>
+          <SideBar/>
+          <div className='MainLending'>
+            <Main/>
+            <AboutUs/>
+            <Teem/>
+            <Works/>
+          </div>
+      </div>
+      <Footer/>
+    </>
   )
 }
 

@@ -5,7 +5,6 @@ import ContactsPage from '../../pages/ContactsPage';
 import MainPage from '../../pages/MainPage';
 
 import './App.scss';
-import Footer from '../Footer/Footer';
 
 
 function App() {
@@ -16,8 +15,6 @@ function App() {
               <Route path='/' element={<MainPage/>}/>
               <Route path='/Contacts' element={<ContactsPage/>}/>
           </Routes>
-        <Footer/>
-
     </div>
   )
 }

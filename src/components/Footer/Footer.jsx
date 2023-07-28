@@ -9,8 +9,10 @@ import './Footer.scss'
 const Footer = () => {
 
     const icons = [Vk, DS, TG]
+    const currentYear = new Date().getFullYear();
     
   return (
+    
     <footer className='Footer'>
             <div className="Footer__wrapper">
                 <div className="Footer__wrapper-information">
@@ -29,7 +31,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="Footer__wrapper-copyrate">
-                © 2020 — 2023 ООО “МТК ТехноСофт”. Все права защищены.Перепечатка и любое использование материалов возможно только при наличии ссылки на первоисточник
+                © 2020 — {currentYear} ООО “МТК ТехноСофт”. Все права защищены.Перепечатка и любое использование материалов возможно только при наличии ссылки на первоисточник
                 </div>
             </div>
     </footer>
