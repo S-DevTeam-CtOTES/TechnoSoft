@@ -1,5 +1,98 @@
 .Header {
     // position: fixed;
     height: 45px;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
+    width: 100%;
+    position: initial;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    &__burgerbtn {
+        display: none;
+        width: 20px;
+        height: 15px;
+        margin-left: 40px;
+        position: relative;
+        // background-color: black;
+        cursor: pointer;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 20px;
+            background-color: black;
+            height: 2px;
+            transition: all 0.5s;
+
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0px;
+            width: 20px;
+            background-color: black;
+            height: 2px;
+            transition: all 0.5s;
+
+        }
+        span {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            background-color: black;
+            height: 2px;
+        }
+        &-active {
+            width: 20px;
+            height: 15px;
+            margin-left: 40px;
+            position: relative;
+            // background-color: black;
+            cursor: pointer;
+            &::after {
+                margin-top: 5px;
+                content: '';
+                position: absolute;
+                // bottom: 7px;
+                width: 20px;
+                transform: rotate(-45deg) ;
+                background-color: black;
+                height: 2px;
+                transition: all 0.5s;
+            }
+            &::before {
+                transition: all 0.5s;
+                margin-top: 5px;
+                content: '';
+                position: absolute;
+                width: 20px;
+                // top: 7px;
+                background-color: black;
+                height: 2px;
+                transform: rotate(45deg) ;
+
+
+            }
+            span {
+                position: none;
+            }
+        }
+    }
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+ .Header {
+    &__burgerbtn {
+        display: block;
+    }
+ }
+ 
+}
+
+@media screen and (max-width: 576px) { 
+
 }

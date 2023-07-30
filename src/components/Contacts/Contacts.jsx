@@ -1,7 +1,7 @@
 import React from 'react'
 import { useForm } from "react-hook-form"
 
-
+import '../app/App.scss'
 import './Contacts.scss'
 
 const Contacts = () => {
@@ -93,7 +93,7 @@ const Contacts = () => {
                             </div>
                         </div>
 
-                        <button className="form__submit-btn" disabled={!isValid} type="submit">
+                        <button className="form__submit-btn  ui-btn" disabled={!isValid} type="submit">
                             <span>
                                 Отправить
                             </span>

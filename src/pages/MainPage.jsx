@@ -15,9 +15,9 @@ const MainPage = () => {
           <SideBar/>
           <div className='MainLending'>
             <Main/>
-            <AboutUs/>
+              <AboutUs/>
             <Teem/>
-            <Works/>
+            {/* <Works/> */}
           </div>
       </div>
       <Footer/>

@@ -43,3 +43,38 @@
     // top: 0;
     /* Дополнительные стили для фиксированного sideBar, чтобы он остановился перед footer */
   }
+
+
+  @media screen and (max-width: 1400px) {
+    
+  }
+
+  @media screen and (max-width: 1200px) {
+  .SideBar {
+    width: 200px;
+    &__list {
+        margin: 60px auto 0 auto;
+        &-Link {
+            margin-top: 25px;
+            font-size: 14px;
+        }
+    }
+  }
+  }
+  
+  @media screen and (max-width: 992px) {
+   
+  }
+  
+  @media screen and (max-width: 768px) {
+  
+    .SideBar {
+        display: none;
+    }
+      
+      
+  }
+  
+  @media screen and (max-width: 576px) { 
+  
+  }

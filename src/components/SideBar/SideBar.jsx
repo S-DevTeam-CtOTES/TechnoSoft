@@ -4,13 +4,7 @@ import logo from '../../assets/icons/Logo.svg'
 import './SideBar.scss'
 
 const SideBar = () => {
-
     const dataLink = ['О НАС', 'КОМАНДА', 'РАБОТЫ'];
-
-
-
-
-
   return (
     <div className="SideBar">
             

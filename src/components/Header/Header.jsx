@@ -2,9 +2,13 @@ import React from 'react'
 
 import './Header.scss'
 
-const Header = () => {
+const Header = ({setActiveMenu, activeMenu}) => {
   return (
-    <div className='Header'></div>
+    <header className='Header'>
+        <div onClick={() => setActiveMenu(!activeMenu)} className={activeMenu ? "Header__burgerbtn-active" : "Header__burgerbtn"} >
+            <span/>
+        </div>
+    </header>
   )
 }
 

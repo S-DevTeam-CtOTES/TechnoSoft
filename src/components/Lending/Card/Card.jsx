@@ -29,8 +29,9 @@ const Card = () => {
 
                 <div className="Card__wrapper-content-imgs">
                     {/* <img src={VK} alt="VK" /> */}
-                    <a href="/"><img src={VK} alt="VK" /></a>
-                    <img src={TG} alt="TG" />
+                    <a className="Card__wrapper-content-imgs-img" href="/"><img src={VK} alt="VK" /></a>
+                    <a className="Card__wrapper-content-imgs-img" href="/"><img src={TG} alt="TG" /></a>
+                    
                 </div>
             </div>
         </div>

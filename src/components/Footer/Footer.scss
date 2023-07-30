@@ -1,13 +1,14 @@
 .Footer {
     // height: 630px;
     margin-top: 200px;
-    max-height: 150px;
+    min-height: 150px;
     background: #1E1E1E;
     &__wrapper {
         padding-top: 10px;
         width: 100%;
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
         &-information {
             margin-top: 5px;
             width: max-content;
@@ -68,3 +69,54 @@
 
 
 // background: #1E1E1E;
+
+@media screen and (max-width: 1450px) {
+  }
+
+@media screen and (max-width: 1200px) {
+  
+  }
+  
+  @media screen and (max-width: 939px) {
+    .Footer {
+        &__wrapper {
+
+            &-information{
+                
+                &-links {
+                    justify-content: center;
+                }
+            }
+            text-align: center;
+            &-copyrate {
+                margin-top: 50px;
+            }
+        }
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    
+      
+      
+  }
+  
+  @media screen and (max-width: 576px) { 
+    .Footer {
+        &__wrapper {
+            text-align: center;
+            &-information{
+                &-contacts {
+                    flex-wrap: wrap;
+                    font-size: 15px;
+                }
+                &-links {
+                    justify-content: center;
+                }
+            }
+            &-copyrate {
+                margin-top: 50px;
+            }
+        }
+    }
+  }

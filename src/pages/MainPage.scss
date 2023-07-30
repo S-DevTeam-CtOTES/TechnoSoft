@@ -1,4 +1,27 @@
 .MainPage {
     display: flex;
+    justify-content: space-between;   
     // width: 100%;
+}
+
+@media screen and (max-width: 992px) { 
+    .MainPage {
+        display: flex;
+        justify-content: space-around;
+    }
+} 
+
+@media screen and (max-width: 768px) { 
+    .MainPage{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 576px) {  
+    .MainPage {
+        margin: 0 auto;
+        display: block;
+    }
+
 }
