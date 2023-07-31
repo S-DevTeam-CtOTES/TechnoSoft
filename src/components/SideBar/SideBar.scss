@@ -44,9 +44,21 @@
     /* Дополнительные стили для фиксированного sideBar, чтобы он остановился перед footer */
   }
 
+  @media screen and (max-width: 1921px) {  
+    .SideBar {
+        width: 340px;
+    }
+  }
+  
+  @media screen and (max-width: 1750px) {
+   
+  }
+
 
   @media screen and (max-width: 1400px) {
-    
+    .SideBar {
+        width: 300px;
+    }
   }
 
   @media screen and (max-width: 1200px) {

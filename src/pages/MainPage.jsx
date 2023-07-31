@@ -17,7 +17,7 @@ const MainPage = () => {
             <Main/>
               <AboutUs/>
             <Teem/>
-            {/* <Works/> */}
+            <Works/>
           </div>
       </div>
       <Footer/>

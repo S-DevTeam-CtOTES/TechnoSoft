@@ -68,6 +68,28 @@
     }
 }
 
+@media screen and (max-width: 1921px) {  
+    .Main {
+        &__wrapper {
+
+            &-content {
+                max-width: 600px;
+            }
+        }
+        &__wrapper-img {
+            // height: 100%;
+            width: 700px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+  
+  @media screen and (max-width: 1750px) {
+   
+  }
+
 
 @media screen and (max-width: 1400px) {
     .Main {

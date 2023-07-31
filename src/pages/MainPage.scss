@@ -4,6 +4,24 @@
     // width: 100%;
 }
 
+@media screen and (max-width: 1921px) { 
+    .MainPage {
+        justify-content: space-between;  
+        // gap: 250px; 
+    }
+}
+
+@media screen and (max-width: 1750px) {
+    .MainPage {
+        // justify-content: space-around;   
+    }
+  }
+  
+  
+  @media screen and (max-width: 1450px) {
+   
+    }
+
 @media screen and (max-width: 992px) { 
     .MainPage {
         display: flex;
