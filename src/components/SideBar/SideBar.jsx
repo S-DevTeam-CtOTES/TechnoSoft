@@ -4,7 +4,21 @@ import logo from '../../assets/icons/Logo.svg'
 import './SideBar.scss'
 
 const SideBar = () => {
-    const dataLink = ['О НАС', 'КОМАНДА', 'РАБОТЫ'];
+    const dataLink = [
+        {
+            name: 'О НАС',
+            href: '#AboutUs'
+        }, 
+        {
+            name: 'КОМАНДА',
+            href: '#Teem'
+        }, 
+        {
+            name: 'РАБОТЫ',
+            href: '#Works'
+        }
+    ]
+          
   return (
     <div className="SideBar">
             
@@ -23,9 +37,9 @@ const SideBar = () => {
                     </NavLink>
                 </div>
                 
-                {dataLink.map((item, i) => {
+                {dataLink.map((item, i) => {   
                     return (
-                        <div key={i} className="SideBar__list-Link">{item}</div>
+                        <a href={item.href} key={i} className="SideBar__list-Link">{item.name}</a>
                     )
                 })}
 

@@ -1,7 +1,19 @@
 
 import laptop from '../../../../assets/img/Laptop.svg'
 import plus from '../../../../assets/icons/Plus.svg'
-import payment from '../../../../assets/img/payment.jpg'
+import Botcollectdonations from '../../../../assets/img/Botcollectdonations.svg'
+import PaymentService from '../../../../assets/img/PaymentService.svg'
+import Cafebot from '../../../../assets/img/Cafebot.svg'
+import Ap from '../../../../assets/img/AP.svg'
+import Coffee from '../../../../assets/img/Coffee.svg'
+import Newsparserbot from '../../../../assets/img/Newsparserbot.svg'
+import PharmacywithAP from '../../../../assets/img/PharmacywithAP.svg'
+import Randompicture from '../../../../assets/img/Randompicture.svg'
+import Tea from '../../../../assets/img/Tea.svg'
+import Technicalsupportbot from '../../../../assets/img/Technicalsupportbot.svg'
+import TGBots from '../../../../assets/img/TGBots.svg'
+import webTab from '../../../../assets/img/webTab.jpg'
+import Platforma from '../../../../assets/img/Platforma.jpg'
 
 
 export const data = [
@@ -9,27 +21,37 @@ export const data = [
         img: plus,
         number: '01',
         title: 'WEB Разработка',
-        tabs: ['Payment Service', 'Сайт для аптеки с панелью администратора', 'Админ панель', 'Разработка интернет магазина горячих напитков'],
+        tabs: ['WEB Разработка', 'Payment Service', 'Сайт для аптеки с панелью администратора', 'Админ панель', 'Разработка интернет магазина горячих напитков', 'Platforma'],
         content: [
+            {
+                title: "WEB Разработка",
+                subtitle: "Создание современных и функциональных сайтов, соответствующих требованиям клиента.Персонализированный подход к каждому проекту.Уникальный дизайн, привлекающий внимание посетителей.Интуитивная навигация для удобства пользователей.Гибкость и масштабируемость сайта для роста бизнеса.Оптимизация сайта для поисковых систем, чтобы привлечь больше органического трафика.Поддержка и обслуживание сайта после его запуска.Команда профессионалов, готовых воплотить все ваши идеи в жизнь.Достижение бизнес-целей онлайн через создание эффективного сайта.Свяжитесь с нами сегодня и доверьте создание своего сайта опытным специалистам.Нужно для заЦель и область сайтафункциональные требованиядизайн и пользовательский интерфейсструктура и контенттехнические требованиябюджет и срокиинтеграция и поддержка.",
+                imgs: [webTab]
+            },
+            {
+                title: "Platforma",
+                subtitle: "Platforma.exe — это уникальный проект, разрабатывающийся как универсальный хаб, в котором будут реализованы следующие возможности:центр профориентации - выявление профессиональных потребностей каждого участника проекта, оценка уровня имеющихся физических и ментальных ограничений для каждой профессии через тестирование, общение с психологом. Формирование индивидуального плана профессионального роста для каждого участника. ",
+                imgs: [Platforma]
+            },
             {
                 title: "Payment Service",
                 subtitle: "Разработка платежного сервиса",
-                imgs: [payment]
+                imgs: [PaymentService]
             },
             {
                 title: "Сайт для аптеки с панелью администратора",
                 subtitle: "2",
-                imgs: [laptop]
+                imgs: [PharmacywithAP]
             },
             {
                 title: "Админ панель",
                 subtitle: "3",
-                imgs: [laptop]
+                imgs: [Ap]
             },
             {
                 title: "Разработка интернет магазина горячих напитков",
                 subtitle: "4",
-                imgs: [laptop]
+                imgs: [Coffee, Tea]
             },
 
         ]
@@ -44,32 +66,32 @@ export const data = [
             {
                 title: "Разработка ботов",
                 subtitle: "Наша компания предлагает профессиональные услуги по разработке клиентов и ботов для Telegram. Мы специализируемся на создании высокоэффективных и интуитивно понятных чат-ботов, которые помогут вам автоматизировать коммуникацию с вашей аудиторией и улучшить работу вашего бизнеса.",
-                imgs: [laptop]
+                imgs: [TGBots]
             },
             {
                 title: "Бот парсер новостей",
                 subtitle: "2",
-                imgs: [laptop]
+                imgs: [Newsparserbot]
             },
             {
                 title: "Бот для сбора пожертвований",
                 subtitle: "3",
-                imgs: [laptop]
+                imgs: [Botcollectdonations]
             },
             {
                 title: "Бот Кафе",
                 subtitle: "4",
-                imgs: [laptop]
+                imgs: [Cafebot]
             },
             {
                 title: "Антиспам Telegram клиент",
                 subtitle: "4",
-                imgs: [laptop]
+                imgs: [Randompicture]
             },
             {
                 title: "Бот технической поддержки",
                 subtitle: "4",
-                imgs: [laptop]
+                imgs: [Technicalsupportbot]
             },
         ]
     },

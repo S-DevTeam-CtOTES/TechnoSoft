@@ -2,20 +2,12 @@ import React, { useRef, useState } from 'react'
 import Tabs from '../Tabs/Tabs'
 
 import Slider from "react-slick";
-import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
 
 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
 import '../Works.scss'
-
-
-
-
-
-
-
 
 
 const AccardionItem = ({data, index, toggle, selected}) => {
@@ -72,7 +64,7 @@ const AccardionItem = ({data, index, toggle, selected}) => {
 
                                     {item.imgs.map((item, i) => {
                                         return (
-                                            <div key={i} className="Works__wrapper-accardion-item-content-slider-item">
+                                            <div key={i} className="Works__wrapper-accardion-item-content-slider-item tg">
                                                 <img src={item}  alt='item'/>
                                             </div>
                                         )

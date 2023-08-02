@@ -13,12 +13,11 @@ const Works = () => {
     if (selected === i ) {
       return setSelected(null)
     }
-
     setSelected(i)
   }
 
   return (
-    <div className='Works'>
+    <div className='Works' id='Works'>
         <div className="container">
             <div className="Works__wrapper">
                 <div className="Works__wrapper-title title">

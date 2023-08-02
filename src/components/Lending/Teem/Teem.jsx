@@ -2,8 +2,6 @@ import React from 'react';
 import Slider from "react-slick";
 
 
-import card from '../../../assets/img/Card.svg'
-import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
 
 
 import "slick-carousel/slick/slick.css"; 
@@ -12,9 +10,12 @@ import "slick-carousel/slick/slick-theme.css";
 
 import Card from '../Card/Card';
 import './Teem.scss';
+import { TeemArray } from './TeemArray';
 
 
 const Teem = () => {
+
+
 
   const settings = {
     dots: true,
@@ -54,22 +55,18 @@ const Teem = () => {
 
 
   return (
-    <section className='Teem'>
+    <section className='Teem' id='Teem'>
         <div className="container">
             <div className="Teem__wrapper">
                 <div className="Teem__wrapper-title title">КОМАНДА</div>
                 <div className="Teem__wrapper-slider">
 
               <Slider className='button-slider' {...settings}>
-                  <Card/>
-                  <Card/>
-                  <Card/>
-                  <Card/>
-                  <Card/>
-                  <Card/>
-                  <Card/>
-                  <Card/>
-                  <Card/>
+                  
+                  {TeemArray.map((item, i) => (
+                    <Card key={i} data={item}/>
+                  ))}
+                  
               </Slider>
 
 

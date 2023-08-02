@@ -16,9 +16,9 @@ function App() {
   
 
   const items = [
-    {value: 'О НАС', href: ''},
-    {value: 'КОМАНДА', href: ''},
-    {value: 'РАБОТЫ', href: ''}
+    {value: 'О НАС', href: '#AboutUs'},
+    {value: 'КОМАНДА', href: '#Teem'},
+    {value: 'РАБОТЫ', href: '#Works'}
   ]
 
   return (

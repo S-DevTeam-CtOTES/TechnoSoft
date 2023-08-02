@@ -5,7 +5,7 @@ import './AboutUs.scss'
 
 const AboutUs = () => {
   return (
-    <section className='AboutUs'>
+    <section className='AboutUs' id='AboutUs'>
       <div className="container">
         <h2 className="AboutUs__title title">О КОМПАНИИ</h2>
         <div className="AboutUs__subtitle subtitle">Мы являемся инновационной IT компанией, специализирующейся на создании передовых технологических решений для различных отраслей. Наша цель - помочь вашему бизнесу достичь новых высот с помощью прогрессивных IT-инструментов и интеллектуальных решений.

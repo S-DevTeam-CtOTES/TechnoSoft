@@ -36,3 +36,11 @@
 .active-tab {
     color: #21A7AF;
 }
+
+
+
+@media screen and (max-width: 576px) {
+    .Tabs__wrapper-item {
+        font-size: 14px;
+    } 
+}

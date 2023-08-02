@@ -19,6 +19,8 @@
 
     &__list {
         width: max-content;
+        display: flex;
+        flex-direction: column;
         margin: 100px auto 0 auto;
         &-Link {
             margin-top: 50px;
@@ -28,8 +30,11 @@
             font-style: normal;
             font-weight: 600;
             line-height: normal;
+            text-decoration: none;
+            &:hover {
+                color:#00000061
+            }
             a {
-
                 text-decoration: none;
             }
         }

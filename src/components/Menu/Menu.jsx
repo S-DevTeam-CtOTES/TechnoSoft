@@ -18,7 +18,7 @@ const Menu = ({items, active, setActive}) => {
                     </NavLink>
                 </div>
                 {items.map(item => 
-                    <div className='menu__link'>{item.value}</div>
+                    <a onClick={() => setActive(false)} className='menu__link' href={item.href}>{item.value}</a>
                 )}
                 <div className="menu__content-link">
                     <NavLink 
