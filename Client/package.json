@@ -2,7 +2,7 @@
   "name": "technosoft",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://s-devteam-ctotes.github.io",
+  "homepage": "./",
   "type": "module",
   "scripts": {
     "dev": "vite --port 8080",
