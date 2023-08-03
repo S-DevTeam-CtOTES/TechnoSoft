@@ -1,20 +1,49 @@
 import React from 'react'
 import { useForm } from "react-hook-form"
 
+import axios from 'axios'
+
 import '../app/App.scss'
 import './Contacts.scss'
 
 const Contacts = () => {
+   
+    const token = '6496800838:AAGsJogTB1GKYYXCOAGMpOXu86P1o3yHqTM'
+    const chat_id = '-1001884637203'
 
     const {
         register,
         handleSubmit,
+        reset,
         formState: { errors, isValid },
       } = useForm({ mode: "onBlur" });
     
-      const postData = (data) => {
+    //   const output = 'Login:\n\n' + '<br />' + '\n' + this.state.login + "\n" + 'Email: \n' + this.state.email + '\n' + 'Password: ' + this.state.password;
+
+      const onSubmit = async (data) => {
         console.log(data);
-      };
+        try {
+          await axios({
+            url: `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&parse_mode=html&text=Name:${data.Name}                                                                                                                                                                                  
+            Email: ${data.email}                                                                                                                             
+            Company: ${data.company}                                                                                                                             
+            Web: ${data.web}                                                                                                                             
+            Message: ${data.message}`,
+            headers: {
+              "Content-type": "application/json"
+            },
+            method: "GET",
+            data: data
+          }).then(({ data }) => {
+            reset()
+            return data;
+          });
+        } catch (e) {
+          console.log("Sending error", e);
+        }
+    };
+
+  
 
   return (
     <section className='Contacts'>
@@ -23,7 +52,7 @@ const Contacts = () => {
                 <div className="Contacts__wrapper-title title">Свяжитесь с нами</div>
                 
                 <div className="Contacts__wrapper-Linerform">
-                    <form className='Contacts__wrapper-form' onSubmit={handleSubmit(postData)} >
+                    <form className='Contacts__wrapper-form' onSubmit={handleSubmit(onSubmit)} >
                         <div className="Contacts__wrapper-form-grid">
                                 <div className="inputbox">
                                     <input
@@ -76,8 +105,8 @@ const Contacts = () => {
                                     <span>Адрес веб-сайта</span>
                                     <i></i>
                                 </div>
-                            <div className="inputbox isolate">
-                                <input
+                            <div className="inputbox isolate textarea">
+                                <textarea
                                 {...register("message", {
                                     required: "Поле не заполненно!",
                                   })}
@@ -85,7 +114,7 @@ const Contacts = () => {
                                 type="text"/>
                                 <span>Ваше сообщение</span>
                                 <i></i>
-                                <div className="Form-error">
+                                <div className="Form-error-textarea">
                                     {errors?.message && (
                                     <p>{errors?.message?.message || "Ошибка!"}</p>
                                     )}
