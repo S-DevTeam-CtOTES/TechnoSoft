@@ -21,7 +21,7 @@ export const TeemArray = [
         place: 'CEO - генеральный директор',
         experiance: 'Более 15 лет опыта в IT',
         description: 'Джон Смит - вдохновленный и талантливый лидер, основатель и генеральный директор нашей компании. С более чем 15-летним опытом работы в IT-индустрии, он является ведущим экспертом в области разработки и внедрения инновационных решений.',
-        tg: '',
+        tg: 'https://t.me/Cokol888',
     },
     {
         img: Anastasia,
@@ -29,7 +29,7 @@ export const TeemArray = [
         place: 'Директор по документации и информационной безопасности',
         experiance: 'Более 7 лет опыта в IT',
         description: '',
-        tg: '',
+        tg: 'https://t.me/Anastasi2142',
     },
     {
         img: Nikolay,
@@ -37,7 +37,7 @@ export const TeemArray = [
         place: 'Технический директор',
         experiance: 'Более 7 лет опыта в IT',
         description: '',
-        tg: '',
+        tg: 'https://t.me/qsnik',
     },
     {
         img: Andrew,
@@ -45,7 +45,7 @@ export const TeemArray = [
         place: 'Директор отдела разработки технических и образовательных решений',
         experiance: 'Более 7 лет опыта в IT',
         description: '',
-        tg: '',
+        tg: 'https://t.me/Andrey_Volkov_77',
     },
     {
         img: Avdushin,
@@ -77,7 +77,7 @@ export const TeemArray = [
         place: 'Аналитик',
         experiance: 'Более 2 лет опыта в IT',
         description: '',
-        tg: 't.me/GDR_88',
+        tg: 'https://t.me/GDR_88',
     },
     {
         img: Mareckaya,
@@ -85,13 +85,13 @@ export const TeemArray = [
         place: 'Дизайнер',
         experiance: 'Более 2 лет опыта в IT',
         description: '',
-        tg: 't.me/polendemort',
+        tg: 'https://t.me/polendemort',
     },
     {
         img: serega,
         name: 'Смирнов Сергей Александрович',
         place: 'Дизайнер',
-        experiance: 'Более 1 лет опыта в IT',
+        experiance: 'Более 2 лет опыта в IT',
         description: '',
         tg: 'https://t.me/flouverodinz',
     },

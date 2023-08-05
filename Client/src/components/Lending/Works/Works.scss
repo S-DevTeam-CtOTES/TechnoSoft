@@ -48,7 +48,7 @@
                 &-content {
                     margin-top: 15px;
                     display: flex;
-                    align-items: center;
+                    // align-items: center;
                     justify-content: space-around;
 
                     &-text {
@@ -145,10 +145,13 @@
 
 }
 
-// .tg {
-//     height: 475px;
-
-// } 
+.tg {
+    border-radius: 5%;
+    overflow: hidden;
+    img {
+        // border-radius: 50px;
+    }
+} 
 
 
 .titleWrapper-active {
