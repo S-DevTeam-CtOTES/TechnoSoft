@@ -25,7 +25,7 @@ export const TeemArray = [
         place: 'Директор по документации и информационной безопасности',
         experiance: 'Более 7 лет опыта в IT',
         description: '',
-        tg: '',
+        tg: 'https://t.me/Anastasi2142',
     },
     {
         img: Nikolay,
@@ -33,7 +33,7 @@ export const TeemArray = [
         place: 'Технический директор',
         experiance: 'Более 7 лет опыта в IT',
         description: '',
-        tg: '',
+        tg: 'https://t.me/qsnik',
     },
     {
         img: Andrew,
@@ -41,7 +41,7 @@ export const TeemArray = [
         place: 'Директор отдела разработки технических и образовательных решений',
         experiance: 'Более 7 лет опыта в IT',
         description: '',
-        tg: '',
+        tg: 'https://t.me/Andrey_Volkov_77',
     },
     {
         img: Avdushin,
@@ -73,7 +73,7 @@ export const TeemArray = [
         place: 'Аналитик',
         experiance: 'Более 2 лет опыта в IT',
         description: '',
-        tg: 't.me/GDR_88',
+        tg: 'https://t.me/GDR_88',
     },
     {
         img: Mareckaya,
@@ -81,7 +81,7 @@ export const TeemArray = [
         place: 'Дизайнер UX/UI',
         experiance: 'Более 2 лет опыта в IT',
         description: '',
-        tg: 't.me/polendemort',
+        tg: 'https://t.me/polendemort',
     },
     {
         img: serega,
