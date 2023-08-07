@@ -6,9 +6,23 @@ import DS from '../../assets/icons/FooterDS.svg'
 import TG from '../../assets/icons/FooterTG.svg'
 
 import './Footer.scss'
-const Footer = () => {
 
-    const icons = [Vk, DS, TG]
+
+const Footer = () => {
+    const icons = [
+        {
+            img: Vk,
+            href: 'https://vk.com/tecnosoft'
+        },
+        {
+            img: DS,
+            href: 'https://discord.gg/QWJ7Vfp3'
+        },
+        {
+            img: TG,
+            href: 'https://t.me/tehnosoft_news'
+        },
+    ]
     const currentYear = new Date().getFullYear();
     
   return (
@@ -25,13 +39,13 @@ const Footer = () => {
                     <div className="Footer__wrapper-information-links">
                         {icons.map((item, i) => {
                             return (
-                                <div className="Footer__wrapper-information-links-link"><img src={item} alt='item' /></div>
+                                <a className="Footer__wrapper-information-links-link " href={item.href}><img src={item.img} alt='item' /></a>
                                 )
                             })}
                     </div>
                 </div>
                 <div className="Footer__wrapper-copyrate">
-                © 2020 — {currentYear} ООО “МТК ТехноСофт”. Все права защищены.Перепечатка и любое использование материалов возможно только при наличии ссылки на первоисточник
+                © 2020 — {currentYear} ООО “МТК ТехноСофт”. Все права защищены. Копирование и любое использование материалов возможно только при наличии ссылки на первоисточник
                 </div>
             </div>
     </footer>

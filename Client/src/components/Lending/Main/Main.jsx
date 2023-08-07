@@ -13,10 +13,13 @@ const Main = () => {
                 <div className="Main__wrapper-content">
                     <h1 className="Main__wrapper-content-title title">Инновационные решения для вашего бизнеса</h1>
                     <div className="Main__wrapper-content-subtitle subtitle">Переводим идеи в код, создавая ваше цифровое будущее</div>
-                    <button className="Main__wrapper-content-btn">
-                        <Link to="/Contacts">
+                    <button className="Main__wrapper-content-btn ui-btn">
+                        
+                        <span>
+                            <Link to="/Contacts">
                             Записаться на консультацию
                         </Link>
+                        </span>
                     </button>
                 </div>
                 <div className="Main__wrapper-img">
