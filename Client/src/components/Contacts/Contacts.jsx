@@ -24,7 +24,7 @@ const Contacts = () => {
         console.log(data);
         try {
           await axios({
-            url: `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&parse_mode=html&text=Name:${data.Name}                                                                                                                                                                                  
+            url: `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&parse_mode=html&text=Name: ${data.Name}                                                                                                                                                                                  
             Email: ${data.email}                                                                                                                             
             Company: ${data.company}                                                                                                                             
             Web: ${data.web}                                                                                                                             

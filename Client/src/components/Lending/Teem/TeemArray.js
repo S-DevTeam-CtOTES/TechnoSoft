@@ -10,18 +10,14 @@ import Nikolay from '../../../assets/img/Nikolay.jpg'
 import Chepa from '../../../assets/img/Chepa.png'
 import serega from '../../../assets/img/serega.jpg'
 
-
-
-
-
 export const TeemArray = [
     {
         img: Chepa,
         name: 'Чепрасов Глеб Сергеевич',
         place: 'CEO - генеральный директор',
         experiance: 'Более 15 лет опыта в IT',
-        description: 'Джон Смит - вдохновленный и талантливый лидер, основатель и генеральный директор нашей компании. С более чем 15-летним опытом работы в IT-индустрии, он является ведущим экспертом в области разработки и внедрения инновационных решений.',
-        tg: 'https://t.me/Cokol888',
+        description: '',
+        tg: '',
     },
     {
         img: Anastasia,
@@ -58,7 +54,7 @@ export const TeemArray = [
     {
         img: Kudryavcev,
         name: 'Кудрявцев Павел Александрович',
-        place: 'Зам. Директор отдела разработки технических и образовательных решений',
+        place: 'Директор по стратегическому развитию, старший юрисконсульт',
         experiance: 'Более 6 лет опыта в IT',
         description: '',
         tg: 'https://t.me/nagadz1ma',
@@ -82,7 +78,7 @@ export const TeemArray = [
     {
         img: Mareckaya,
         name: 'Марецкая Полина Валентиновна',
-        place: 'Дизайнер',
+        place: 'Дизайнер UX/UI',
         experiance: 'Более 2 лет опыта в IT',
         description: '',
         tg: 'https://t.me/polendemort',
@@ -90,8 +86,8 @@ export const TeemArray = [
     {
         img: serega,
         name: 'Смирнов Сергей Александрович',
-        place: 'Дизайнер',
-        experiance: 'Более 2 лет опыта в IT',
+        place: 'Дизайнер UX/UI',
+        experiance: 'Более 1 лет опыта в IT',
         description: '',
         tg: 'https://t.me/flouverodinz',
     },
